@@ -4,7 +4,7 @@
 
 To test this, you'll need to create an AWS account, with an S3 bucket that your key/secret pair have write access to. Additionally, the files you upload will have to be readable by everyone.
 
-```
+``` javascript
 var options = {
     publicDir  : path.join(__dirname, 'public'),
     viewsDir   : path.join(__dirname, 'views'),
