@@ -1,0 +1,22 @@
+html
+  head
+    !=CDN('/script.js')
+    !=CDN('/style.css')
+  body
+    #content
+      h1 Express CDN w/ MaxCDN
+      p This is my logo!
+      p
+        !=CDN('/image.jpg')
+        script.
+          document.write(test());
+
+      hr
+      p Here's what's being loaded!
+      pre
+        ="!=CDN('/script.js')\n"
+        =CDN('/script.js')+'\n\n'
+        ="!=CDN('/style.css')\n"
+        =CDN('/style.css')+'\n\n'
+        ="!=CDN('/image.jpg')\n"
+        =CDN('/image.jpg')+'\n\n'
