@@ -7,7 +7,7 @@ var options = {
     publicDir  : path.join(__dirname, 'public'),
     viewsDir   : path.join(__dirname, 'views'),
     domain     : 'yours.netdna-cdn.com',
-    bucket     : 'expresscdn',
+    bucket     : 'your_backet',
     key        : 'aws_key',
     secret     : 'aws_secret',
     hostname   : 'localhost',
