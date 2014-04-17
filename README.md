@@ -1,8 +1,10 @@
 # MaxCDN Express CDN Example
 
+## Setup
+
 To test this, you'll need to create an AWS account, with an S3 bucket that your key/secret pair have write access to. Additionally, the files you upload will have to be readable by everyone.
 
-```
+``` javascript
 var options = {
     publicDir  : path.join(__dirname, 'public'),
     viewsDir   : path.join(__dirname, 'views'),
@@ -10,7 +12,7 @@ var options = {
     port       : 1337,
     ssl        : false,
     production : true,
-    
+
     // Update the following:
     domain     : 'yours.netdna-cdn.com',
     bucket     : 'your_bucket',
@@ -19,5 +21,15 @@ var options = {
 };
 ```
 
+Then install required modules.
 
-![](screenshot.png)
+```
+npm install
+```
+
+Once done, simple start express like so;
+
+```
+node index.js
+```
+
